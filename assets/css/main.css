@@ -3690,7 +3690,7 @@ body.is-preload #header:after {
 }
 
 .carousel-content img {
-  height: 50vh;
+  height: 45vh;
   min-width: 100vw;
   max-width: 100vw;
   object-fit: cover;
