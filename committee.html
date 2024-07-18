@@ -1,382 +1,390 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>CSI-VIVA TECH | Committee</title>
     <link rel="icon" type="image/x-icon" href="/assets/css/images/csilogo.png">
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 
     <!-- font awesome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"
-      integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"
+        integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Latest compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
-  <body class="is-preload">
-    
-    <!-- Navbar -->
-    <nav
-      style="border: 1px white; background-color: white; margin: 0px; font-family: 'Montserrat', sans-serif;"
-      class="navbar navbar-inverse"
-    >
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target="#myNavbar"
-          >
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">
-            <img
-              src="assets/css/images/csilogo.png"
-              style="margin-top: -10px"
-              width="60"
-              height="60"
-              class="d-inline-block align-top"
-              alt=""
-            />
-          </a>
-        </div>
-        <div class="navbar-right collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li>
-              <a style="color: #183183" href="index.html"><h4>Home</h4></a>
-            </li>
-            <li>
-              <a style="color: #183183" href="events.html"><h4>Events</h4></a>
-            </li>
-            <li>
-              <a style="color: #183183" href="committee.html"><h4>Committee</h4></a>
-            </li>
-            <li>
-              <a style="color: #183183" href="gallery.html"><h4>Gallery</h4></a>
-            </li>
-            <li>
-              <a style="color: #183183" href="contact.html"><h4>Contact Us</h4></a>
-            </li>
-            <li>
-              <a style="color: #183183" href="http://www.viva-technology.org/New/Tech-next/"><h4>Tech Next</h4></a>
-            </li>
-            <li>
-              <a style="color: #183183" href="https://techchase2022.github.io/registration/"><h4>Tech Chase</h4></a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <style>
+        /* Can change as per preference */
+        .card {
+            width: 18rem;
+            height: 27rem;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!--Navbar -->
+
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/css/images/csilogo.png" width="60" height="60" alt="" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="navbar-nav fs-5">
+                    <a style="color: #183183" class="nav-link" href="index.html">Home</a>
+                    <a style="color: #183183" class="nav-link" href="events.html">Events</a>
+                    <a style="color: #183183" class="nav-link fw-bold" href="current.html"><u>Committee</u></a>
+                    <a style="color: #183183" class="nav-link" href="gallery.html">Gallery</a>
+                    <a style="color: #183183" class="nav-link" href="contact.html">Contact Us</a>
+                    <a style="color: #183183" class="nav-link" href="http://www.viva-technology.org/New/Tech-next/">Tech
+                        Next</a>
+                    <!-- <a style="color: #183183" class="nav-link" href="https://techchase2022.github.io/registration/">Tech
+                        Chase</a> -->
+
+                </div>
+            </div>
     </nav>
 
     <!-- Header -->
     <section id="header">
-      <div class="inner">
-        <span class="icon solid major fa-group"></span>
-        <h1>
-            Committee<br />
-        </h1>
-      </div>
+        <div class="inner">
+            <span class="icon solid major fa-group"></span>
+            <h1>
+                Committee<br />
+            </h1>
+        </div>
     </section>
 
     <!-- Three -->
     <section id="three" class="main style1 special">
-        <div style="font-family: 'Montserrat', sans-serif; "class="container">
-          <header class="major">
-            <h1><b>Committee 2022-23</b></h1>
-          </header>
-  
-          <div class="row gtr-150">
-            <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-                <span class="image fit"><img style="height: 250px; width: 250px; margin-left: 50px;" src="images/HOD_Ma_am.png" alt="" /></span>
-                <h3 class="commmittee_designation">Dr. Ashwini Save</h3>
-                <p class="commmittee_designation">Student Branch Councilor<br>(HOD, Computer Engineering)</p>
+        <div style="font-family: 'Montserrat', sans-serif; " class="container">
+            <header class="major">
+                <h1><b>Committee 2023-24</b></h1>
+            </header>
 
-    
-    
-                
-              </div>
-              <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-                <span class="image fit"><img style="height: 250px; width: 250px; margin-left: 50px;" src="images/Akshata_mam.svg" alt="" /></span>
-                <h3 class="commmittee_designation">Prof. Akshata Raut</h3>
-                <p class="commmittee_designation">
-                  CSI In-charge</p>
-                
-                 
-    
-    
-                
-              </div>
-            <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-              <span class="image fit"><img style="height: 250px; width: 250px; margin-left: 50px;" src="images/pranav.svg" alt="" /></span>
-              <h3 class="commmittee_designation">Mr. Pranav Telangade</h3>
-              <p class="commmittee_designation">
-                Chairman</p>
-            </div>
-            
-          </div>
-          <br>
-          <h2>Assisting Head Committee</h2>
-          <br>
-          <div class="row gtr-150">
-            <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-                <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/vrushika.png" alt="" /></span>
-                <h3 class="commmittee_designation">Ms. Vrushika Naik</h3>
-                <p class="commmittee_designation">Secretary</p>
 
-    
-    
-                
-              </div>
-              <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-                <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/Siddhesh.png" alt="" /></span>
-                <h3 class="commmittee_designation">Mr. Siddhesh Vishwakarma</h3>
-                <p class="commmittee_designation">Treasurer</p>
-                 
-    
-    
-                
-              </div>
-            <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-              <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/omsai.png" alt="" /></span>
-              <h3 class="commmittee_designation">Mr. Omsai Nagvekar</h3>
-              <p class="commmittee_designation">
-                Organizing Head</p>
-            </div>
-            
-          </div>
-          <br>
-          <div class="row gtr-150">
-            <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-                <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/Harsh.png" alt="" /></span>
-                <h3 class="commmittee_designation">Mr. Harsh Jadeja</h3>
-                <p class="commmittee_designation">Publicity Head</p>
-
-    
-    
-                
-              </div>
-              <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-                <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/yogesh.png" alt="" /></span>
-                <h3 class="commmittee_designation">Mr. Yogesh Yadav</h3>
-                <p class="commmittee_designation">Publication Head</p>
-                 
-    
-    
-                
-              </div>
-            <div class="col-4 col-12-medium" style="font-weight: 500;">
-              <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/qhubaib.png" alt="" /></span>
-              <h3 class="commmittee_designation">Mr. Qhubaib Shaikh</h3>
-              <p class="commmittee_designation">
-                Publication Head</p>
-            </div>
-
-            <div class="col-4 col-12-medium" style="font-weight: 500;">
-              <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/Saish.png" alt="" /></span>
-              <h3 class="commmittee_designation">Mr. Saish Sankhe</h3>
-              <p class="commmittee_designation">
-                Publication Head</p>
-            </div>
-
-            
-              <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-                  <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/priya.png" alt="" /></span>
-                  <h3 class="commmittee_designation">Ms. Priya Pathak</h3>
-                  <p class="commmittee_designation">Technical Head</p>
+            <div class="row ">
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/HOD_Ma_am.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Dr. Ashwini Save</h3>
+                            <p class="card-text">Student Branch Councilor<br>HOD, Computer Engineering</p>
+                        </div>
+                    </div>
                 </div>
-
-
-                <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-                  <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/abhishek.png" alt="" /></span>
-                  <h3 class="commmittee_designation">Mr. Abhishek Ojha</h3>
-                  <p class="commmittee_designation">Technical Head</p>
-            
-          </div></div>
-          <br>
-           
-          <div class="row gtr-150">
-            <div class="col-12 col-12-medium committee_pics" style="font-weight: 500;">
-              <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 475px;" src="images/mansi.png" alt="" /></span>
-              <h3 class="commmittee_designation">Ms. Mansi Patil</h3>
-              <p class="commmittee_designation">Technical Head</p>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/Akshata_mam.svg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Prof. Akshata Raut</h3>
+                            <p class="card-text">CSI In-charge</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/Harshal.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Mr. Harshal Patil</h3>
+                            <p class="card-text">Chairman</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-          </div>
-          <br>
-          <h2>Assisting Deputy Committee</h2>
-          <br>
-          <div class="row gtr-150">
-            <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-                <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/Harshal.jpg" alt="" /></span>
-                <h3 class="commmittee_designation">Mr. Harshal Patil</h3>
-                <p class="commmittee_designation">Vice Chairman</p>
 
-    
-    
-                
-              </div>
-              <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-                <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/Anuradha.svg" alt="" /></span>
-                <h3 class="commmittee_designation">Ms. Anuradha Dhumwad</h3>
-                <p class="commmittee_designation">Vice Secretary</p>
-                 
-    
-    
-                
-              </div>
-            <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-              <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/Kashish.png" alt="" /></span>
-              <h3 class="commmittee_designation">Ms. Kashish Chauhan</h3>
-              <p class="commmittee_designation">
-                Deputy Organizing Head</p>
-            </div>
-            
-          </div>
-          <br>
-          <div class="row gtr-150">
-            <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-                <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/Sakshi.png" alt="" /></span>
-                <h3 class="commmittee_designation">Ms. Sakshi Negi</h3>
-                <p class="commmittee_designation">Deputy Publicity Head</p>
 
-    
-    
-                
-              </div>
-              <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-                <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/Neha.png" alt="" /></span>
-                <h3 class="commmittee_designation">Ms. Neha Kadam</h3>
-                <p class="commmittee_designation">Deputy Treasurer</p>
-                 
-    
-    
-                
-              </div>
-            <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-              <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/Deven.png" alt="" /></span>
-              <h3 class="commmittee_designation">Mr. Deven Randive</h3>
-              <p class="commmittee_designation">
-                Publication Team</p>
+            <br>
+            <h2>Assisting Head Committee</h2>
+            <br>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/Anuradha.svg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Ms. Anuradha Dhumwad</h3>
+                            <p class="card-text">Secretary</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/Neha.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Ms. Neha Kadam</h3>
+                            <p class="card-text">Treasurer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/Kashish.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Ms. Kashish Chauhan</h3>
+                            <p class="card-text">Organizing Head</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-          </div>
-          <br>
-          <div class="row gtr-150">
-            <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-                <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/Aryan.png" alt="" /></span>
-                <h3 class="commmittee_designation">Mr. Aryan Raut</h3>
-                <p class="commmittee_designation">Publication Team</p>
+            <br>
+            <div class="row g-3" style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/tanisha.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Ms. Tanisha Motivaras</h3>
+                            <p class="card-text">Publicity Head</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/Ishan.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Mr. Ishan Shaikh</h3>
+                            <p class="card-text">Publication Head</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/Aryan.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Mr. Aryan Raut</h3>
+                            <p class="card-text">Publication Head</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/jayesh.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Mr. Jayesh Vaidya</h3>
+                            <p class="card-text">Publication Head</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/ansh.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Mr. Ansh Poojari</h3>
+                            <p class="card-text">Social Media Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/Sakshi.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Ms. Sakshi Negi</h3>
+                            <p class="card-text">Social Media Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/Rohit.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Mr. Rohit Ghorui</h3>
+                            <p class="card-text">Technical Head</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/Vrunal.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Ms. Vrunal Gharat</h3>
+                            <p class="card-text">Technical Head</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/priyanshu.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Mr. Priyanshu Yadav</h3>
+                            <p class="card-text">Technical Head</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    
-    
-                
-              </div>
-              <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-                <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/Ishan.jpg" alt="" /></span>
-                <h3 class="commmittee_designation">Mr. Ishan Shaikh</h3>
-                <p class="commmittee_designation">Publication Team</p>
-                 
-    
-    
-                
-              </div>
-            <div class="col-4 col-12-medium committee_pics" style="font-weight: 500;">
-              <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 75px;" src="images/Ayush.png" alt="" /></span>
-              <h3 class="commmittee_designation">Mr.Ayush Sharma</h3>
-              <p class="commmittee_designation">Technical Team</p>
+
+            <br>
+            <h2>Assisting Deputy Committee</h2>
+            <br>
+
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/manjiri.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Ms. Manjiri Mhatre</h3>
+                            <p class="card-text">Vice Chairman</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/sona.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Ms. Sona Bhoir</h3>
+                            <p class="card-text">Vice Secretary</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/aasmi.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Ms. Aasmi Jugari</h3>
+                            <p class="card-text">Deputy Organizing Head</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-          </div>
-          <br>
-          <div class="row gtr-150">
-            <div class="col-8 col-0-medium committee_pics" style="font-weight: 500;">
-                <span class="image fit"><img style="height: 200px; width: 200px; margin-left: 275px;" src="images/Vrunal.png" alt="" /></span>
-                <h3 class="commmittee_designation">Ms. Vrunal Gharat</h3>
-               <p class="commmittee_designation">Technical Team</p>                       
-              </div>
-              <div class="col-0 col-0-medium committee_pics" style="font-weight: 500;">
-                <span class="image fit"><img style="height: 200px; width: 200px; margin-left: -125px;" src="images/Rohit.png" alt="" /></span>
-                <h3 class="commmittee_designation" style="margin-left: -125px;">Mr. Rohit Ghorui</h3>
-                <p class="commmittee_designation" style="margin-left: -125px;">Technical Team</p>       
-              </div>
-           
-            
-          </div>
+
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/sahil.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Mr. Sahil Manjrekar</h3>
+                            <p class="card-text">Deputy Publicity Head</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/jay.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Ms. Jay Rupareliya</h3>
+                            <p class="card-text">Deputy Treasurer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/aparna.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Ms. Aparna Rane</h3>
+                            <p class="card-text">Publication Team</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/shrikant.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Mr. Shrikant Bhise</h3>
+                            <p class="card-text">Publication Team</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/pritesh.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Mr. Pritesh Dolai</h3>
+                            <p class="card-text">Publication Team</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/suruchi.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Ms. Suruchi Sawant</h3>
+                            <p class="card-text">Technical Team</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3">
+
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/vaishnavi.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Ms. Vaishnavi Pisal</h3>
+                            <p class="card-text">Technical Team</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto mb-3">
+                        <img loading="lazy" src="images/saksha.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Mr. Saksha Gotad</h3>
+                            <p class="card-text">Technical Team</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <br>
-      <br>
-      <h4 style="font-family: 'Montserrat', sans-serif;" >To see our previous committee, please visit our old website,<span><a href="https://csi-vivatech.github.io/oldcsi/"> click here</a></span></h4>
-      </section>
-  
+        <br>
+        
+        <h4 style="font-family: 'Montserrat', sans-serif;" >To see our past events, please visit our old website, <span><a href="https://csi-vivatech.github.io/oldcsi/">click here</a></span></h4><br>
+
+    </section>
+
 
 
     <!-- Footer -->
     <section id="footer">
-      <ul class="icons">
-        <li>
-          <a
-            style="color: white"
-            href="https://www.facebook.com/compsvivatech/"
-            class="icon brands alt fa-facebook-f"
-            ><span class="label">Facebook</span></a
-          >
-        </li>
-        <li>
-          <a
-            style="color: white"
-            href="https://instagram.com/comps_viva?utm_medium=copy_link"
-            class="icon brands alt fa-instagram"
-            ><span class="label">Instagram</span></a
-          >
-        </li>
-        <li>
-          <a
-            style="color: white"
-            href="https://www.youtube.com/channel/UCz69jN4Cxd-TKrozP-DkzUA"
-            class="icon brands alt fa-youtube"
-            ><span class="label">YouTube</span></a
-          >
-        </li>
+        <ul class="icons">
+            <li>
+                <a style="color: white" href="https://www.facebook.com/compsvivatech/"
+                    class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a>
+            </li>
+            <li>
+                <a style="color: white" href="https://instagram.com/comps_viva?utm_medium=copy_link"
+                    class="icon brands alt fa-instagram"><span class="label">Instagram</span></a>
+            </li>
+            <li>
+                <a style="color: white" href="https://www.youtube.com/channel/UCz69jN4Cxd-TKrozP-DkzUA"
+                    class="icon brands alt fa-youtube"><span class="label">YouTube</span></a>
+            </li>
 
-        <li>
-          <a
-            style="color: white"
-            href="mailto:csi.comps@viva-technology.org"
-            class="icon solid alt fa-envelope"
-            ><span class="label">Email</span></a
-          >
-        </li>
-      </ul>
-      <ul style="font-family: 'Montserrat', sans-serif;" class="copyright">
-        <li>&copy; All Rights Reserved</li>
-        <li>Designed by CSI-VIVA TECH Team</li>
-      </ul>
+            <li>
+                <a style="color: white" href="mailto:csi.comps@viva-technology.org"
+                    class="icon solid alt fa-envelope"><span class="label">Email</span></a>
+            </li>
+        </ul>
+        <ul style="font-family: 'Montserrat', sans-serif;" class="copyright">
+            <li>&copy; All Rights Reserved</li>
+            <li>Designed by CSI-VIVA TECH Team</li>
+        </ul>
 
-      
+
     </section>
 
     <!-- Scripts -->
@@ -386,5 +394,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-  </body>
+</body>
+
 </html>
